@@ -16,8 +16,7 @@ body {
 
 .page-header {
   background-color: var(--primary-bg-color);
-  margin-bottom: 94px;
-  border: #ececec solid 1px;
+  border-bottom: #ececec solid 1px;
 }
 
 .container {
@@ -124,7 +123,8 @@ header li {
 }
 
 .our-projects {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .projects-list {
@@ -192,8 +192,11 @@ a {
 }
 
 .description {
-  display: inline-block;
-  margin: 20px 24px;
+  display: block;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 h2 {
@@ -202,7 +205,7 @@ h2 {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 4px;
 }
 
@@ -213,44 +216,51 @@ p {
   line-height: 1.87;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 /* Footer */
 
 .footer {
   background-color: var(--secondary-bg-color);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .footer-address {
+  display: inline-block;
+  margin-bottom: 9px;
   color: var(--secondary-text-color);
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .footer-contacts {
+  display: inline-block;
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-color);
 }
-
 /* Footer logo */
 
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
   font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-size: 26px;
   font-weight: 700;
+  font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
@@ -258,7 +268,6 @@ p {
 .footer-logo > .logo-web {
   color: var(--accent-color);
 }
-
 .footer-logo > .logo-studio {
   color: var(--secondary-text-color);
 }

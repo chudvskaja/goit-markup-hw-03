@@ -121,7 +121,6 @@ header li {
 .hero {
   background-color: var(--secondary-bg-color);
   margin-top: 0px;
-  margin-bottom: 94px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -164,7 +163,8 @@ header li {
 
 .features {
   background-color: var(--primary-bg-color);
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -206,14 +206,16 @@ header li {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Section "Work" */
 
 .work {
   background-color: var(--primary-bg-color);
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
+
 .work-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -301,12 +303,20 @@ header li {
 }
 
 .footer-address {
+  display: inline-block;
+  margin-bottom: 9px;
   color: var(--secondary-text-color);
   font-style: normal;
 }
 
 .footer-contacts {
+  display: inline-block;
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-contacts:hover,
